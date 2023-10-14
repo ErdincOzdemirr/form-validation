@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title></title>
+  <script src="app.js" defer></script>
+  <link rel="stylesheet" href="../base.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <h1>
+    Create Your <br />Account
+  </h1>
+
+  <form action="" id="form">
+    <p class="input-field">
+      <label for="name">Full name</label>
+      <input type="text" name="name" id="name" autocomplete="off" required>
+    </p>
+    <span class="error"></span>
+
+    <p class="input-field">
+      <label for="name">Email</label>
+      <input type="text" name="email" id="email" autocomplete="off" required>
+    </p>
+    <span class="error"></span>
+
+    <p class="input-field">
+      <label for="name">Password</label>
+      <input type="password" name="password" id="password" required>
+    </p>
+
+    <p class="chips">
+      <span class="chip password-validator" data-content="❌">
+        at least 8 character long
+      </span>
+      <span class="chip password-validator" data-content="❌">
+        1 uppercase letter
+      </span>
+      <span class="chip password-validator" data-content="❌">
+        1 lowercase letter
+      </span>
+      <span class="chip password-validator" data-content="❌">
+        1 special character
+      </span>
+      <span class="chip password-validator" data-content="❌">
+        1 number
+      </span>
+    </p>
+
+    <button id="register">Register</button>
+  </form>
+</body>
+
+</html>
